@@ -7,7 +7,7 @@ LICENSE = "GPL-3.0"
 LIC_FILES_CHKSUM = "file://COPYING;md5=ecb319022da02987a5c1a92120412393"
 SECTION = "apps"
 
-SRCREV = "6b782edc8e442d711a7a5ad3c4178b1072893a85"
+SRCREV = "638a7b5461e4072da3292b8b83b07727f71c6435"
 SRC_URI = "git://github.com/mkschreder/orangerpcd \
 		file://fix_luajit.patch \
 		file://access.json \

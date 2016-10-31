@@ -34,5 +34,4 @@ do_install_append () {
         ln -s /sbin/kmodloader ${D}/usr/sbin/lsmod
         ln -s /sbin/kmodloader ${D}/usr/sbin/modinfo
         ln -s /sbin/kmodloader ${D}/usr/sbin/modprobe
-
 }

@@ -9,7 +9,7 @@ LIC_FILES_CHKSUM = "file://README.md;md5=d41d8cd98f00b204e9800998ecf8427e"
 SECTION = "libs"
 
 SRC_URI = "git://github.com/mkschreder/libutype.git;protocol=git;branch=master"
-SRCREV = "0cfa35bbb4948d6926aa85d3e48f2318b9166486"
+SRCREV = "e1c7683eb6ec32a933423e52dccdca11a8a5e62b"
 
 S = "${WORKDIR}/git"
 
@@ -18,6 +18,7 @@ inherit autotools
 #EXTRA_OEMAKE = "DESTDIR=${D} BUILD_DIR=${B}"
 
 FILES_SOLIBSDEV = ""
-FILES_${PN} = "${libdir}/*.so.*"
+FILES_${PN} = " ${libdir}/*.so ${libdir}/*.so.* "
+INSANE_SKIP_${PN} = "dev-so"
 
 RDEPENDS_${PN} += "libusys"
